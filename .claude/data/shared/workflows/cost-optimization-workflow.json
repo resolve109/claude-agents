@@ -1,0 +1,36 @@
+{
+  "name": "cost-optimization",
+  "version": "1.0.0",
+  "description": "Multi-agent workflow for infrastructure cost optimization",
+  "steps": [
+    {
+      "order": 1,
+      "agent": "aws",
+      "action": "gather_cost_data",
+      "output": "cost-report.json"
+    },
+    {
+      "order": 2,
+      "agent": "terra",
+      "action": "analyze_infrastructure",
+      "input": "cost-report.json",
+      "output": "optimization-plan.json"
+    },
+    {
+      "order": 3,
+      "agent": "cicd",
+      "action": "implement_changes",
+      "input": "optimization-plan.json",
+      "output": "deployment-result.json"
+    },
+    {
+      "order": 4,
+      "agent": "secops",
+      "action": "validate_security",
+      "input": "deployment-result.json",
+      "output": "security-report.json"
+    }
+  ],
+  "on_success": "notify_team",
+  "on_failure": "rollback_changes"
+}

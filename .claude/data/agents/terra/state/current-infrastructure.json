@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "agent": "terra",
+    "version": "1.0.0",
+    "last_updated": "2025-01-23T14:30:00Z",
+    "environment": "production"
+  },
+  "infrastructure": {
+    "vpc": {
+      "id": "vpc-0a1b2c3d4e5f6g7h8",
+      "cidr": "10.0.0.0/16",
+      "region": "us-east-1",
+      "state": "available"
+    },
+    "subnets": {
+      "public": [
+        {
+          "id": "subnet-pub-1a",
+          "cidr": "10.0.1.0/24",
+          "az": "us-east-1a",
+          "available_ips": 251
+        },
+        {
+          "id": "subnet-pub-1b",
+          "cidr": "10.0.2.0/24",
+          "az": "us-east-1b",
+          "available_ips": 249
+        },
+        {
+          "id": "subnet-pub-1c",
+          "cidr": "10.0.3.0/24",
+          "az": "us-east-1c",
+          "available_ips": 250
+        }
+      ],
+      "private": [
+        {
+          "id": "subnet-priv-1a",
+          "cidr": "10.0.101.0/24",
+          "az": "us-east-1a",
+          "available_ips": 240
+        },
+        {
+          "id": "subnet-priv-1b",
+          "cidr": "10.0.102.0/24",
+          "az": "us-east-1b",
+          "available_ips": 238
+        },
+        {
+          "id": "subnet-priv-1c",
+          "cidr": "10.0.103.0/24",
+          "az": "us-east-1c",
+          "available_ips": 241
+        }
+      ]
+    },
+    "eks_cluster": {
+      "name": "production-cluster",
+      "version": "1.28",
+      "endpoint": "https://ABC123.gr7.us-east-1.eks.amazonaws.com",
+      "status": "ACTIVE",
+      "node_groups": {
+        "general": {
+          "instance_type": "t3.large",
+          "current_size": 5,
+          "min_size": 3,
+          "max_size": 10
+        },
+        "compute": {
+          "instance_type": "c5.xlarge",
+          "current_size": 3,
+          "min_size": 2,
+          "max_size": 5
+        }
+      }
+    },
+    "rds": {
+      "identifier": "prod-postgres-db",
+      "engine": "postgres",
+      "version": "14.7",
+      "instance_class": "db.t3.medium",
+      "allocated_storage": 100,
+      "multi_az": true,
+      "status": "available"
+    },
+    "s3_buckets": [
+      {
+        "name": "cloudagents-app-data",
+        "versioning": true,
+        "encryption": "AES256"
+      },
+      {
+        "name": "cloudagents-logs",
+        "lifecycle_policy": "90_days"
+      },
+      {
+        "name": "cloudagents-backups",
+        "replication": "us-west-2"
+      }
+    ]
+  },
+  "cost_tracking": {
+    "current_month": {
+      "total": 3245.67,
+      "breakdown": {
+        "compute": 1523.45,
+        "storage": 456.78,
+        "network": 789.12,
+        "database": 476.32
+      }
+    },
+    "budget": 5000.00,
+    "utilization_percentage": 64.91
+  },
+  "compliance": {
+    "last_audit": "2025-01-20T00:00:00Z",
+    "status": "compliant",
+    "findings": []
+  }
+}

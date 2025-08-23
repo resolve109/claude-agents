@@ -1,0 +1,171 @@
+{
+  "categories": {
+    "compute": {
+      "description": "Compute services including EC2, Lambda, and container services",
+      "services": ["ec2", "lambda", "autoscaling", "batch", "lightsail", "elasticbeanstalk"],
+      "subcategories": {
+        "core-infrastructure": ["ec2"],
+        "serverless": ["lambda"],
+        "scaling": ["autoscaling"],
+        "batch-processing": ["batch"],
+        "simplified": ["lightsail"],
+        "paas": ["elasticbeanstalk"]
+      }
+    },
+    "containers": {
+      "description": "Container orchestration and management services",
+      "services": ["ecs", "eks", "ecr", "fargate"],
+      "subcategories": {
+        "core-infrastructure": ["ecs", "eks"],
+        "registry": ["ecr"],
+        "serverless-containers": ["fargate"]
+      }
+    },
+    "networking": {
+      "description": "Networking, CDN, and API management services",
+      "services": ["vpc", "elb", "cloudfront", "route53", "directconnect", "apigateway", "appmesh", "apigatewayv2"],
+      "subcategories": {
+        "core-networking": ["vpc"],
+        "load-balancing": ["elb"],
+        "cdn": ["cloudfront"],
+        "dns": ["route53"],
+        "hybrid": ["directconnect"],
+        "api-management": ["apigateway", "apigatewayv2"],
+        "service-mesh": ["appmesh"]
+      }
+    },
+    "storage": {
+      "description": "Object, block, and file storage services",
+      "services": ["s3", "efs", "fsx", "ebs", "backup", "storagegateway"],
+      "subcategories": {
+        "object-storage": ["s3"],
+        "file-storage": ["efs", "fsx"],
+        "block-storage": ["ebs"],
+        "backup": ["backup"],
+        "hybrid": ["storagegateway"]
+      }
+    },
+    "database": {
+      "description": "Relational, NoSQL, and specialized database services",
+      "services": ["rds", "dynamodb", "elasticache", "aurora", "documentdb", "neptune"],
+      "subcategories": {
+        "relational": ["rds", "aurora"],
+        "nosql": ["dynamodb"],
+        "caching": ["elasticache"],
+        "document": ["documentdb"],
+        "graph": ["neptune"]
+      }
+    },
+    "security": {
+      "description": "Security, identity, and compliance services",
+      "services": ["iam", "waf", "kms", "secretsmanager", "guardduty", "acm", "cognito", "inspector", "macie", "securityhub"],
+      "subcategories": {
+        "identity": ["iam"],
+        "web-security": ["waf"],
+        "encryption": ["kms"],
+        "secrets": ["secretsmanager"],
+        "threat-detection": ["guardduty"],
+        "certificates": ["acm"],
+        "authentication": ["cognito"],
+        "vulnerability": ["inspector"],
+        "data-security": ["macie"],
+        "security-posture": ["securityhub"]
+      }
+    },
+    "management": {
+      "description": "Infrastructure management, IaC, and governance services",
+      "services": ["cloudformation", "sam", "cdk", "systems-manager", "opsworks", "appconfig", "organizations", "config", "servicecatalog", "controltower", "ram"],
+      "subcategories": {
+        "iac": ["cloudformation", "cdk"],
+        "serverless-iac": ["sam"],
+        "operations": ["systems-manager"],
+        "configuration-management": ["opsworks"],
+        "configuration": ["appconfig"],
+        "governance": ["organizations", "servicecatalog", "controltower"],
+        "compliance": ["config"],
+        "resource-sharing": ["ram"]
+      }
+    },
+    "monitoring": {
+      "description": "Monitoring, logging, and observability services",
+      "services": ["cloudwatch", "xray", "cloudtrail"],
+      "subcategories": {
+        "metrics": ["cloudwatch"],
+        "tracing": ["xray"],
+        "audit": ["cloudtrail"]
+      }
+    },
+    "devops": {
+      "description": "CI/CD and development tools",
+      "services": ["codepipeline", "codebuild", "codedeploy"],
+      "subcategories": {
+        "cicd": ["codepipeline"],
+        "build": ["codebuild"],
+        "deployment": ["codedeploy"]
+      }
+    },
+    "integration": {
+      "description": "Messaging, events, and workflow services",
+      "services": ["sqs", "sns", "eventbridge", "stepfunctions", "mq", "appflow"],
+      "subcategories": {
+        "messaging": ["sqs", "sns"],
+        "events": ["eventbridge"],
+        "orchestration": ["stepfunctions"],
+        "message-broker": ["mq"],
+        "data-integration": ["appflow"]
+      }
+    },
+    "analytics": {
+      "description": "Data analytics and big data services",
+      "services": ["redshift", "athena", "emr", "kinesis", "glue", "msk"],
+      "subcategories": {
+        "data-warehouse": ["redshift"],
+        "query": ["athena"],
+        "big-data": ["emr"],
+        "streaming": ["kinesis", "msk"],
+        "etl": ["glue"]
+      }
+    },
+    "migration": {
+      "description": "Migration and data transfer services",
+      "services": ["dms", "datasync", "transfer", "migrationhub"],
+      "subcategories": {
+        "database-migration": ["dms"],
+        "data-transfer": ["datasync"],
+        "file-transfer": ["transfer"],
+        "migration-tracking": ["migrationhub"]
+      }
+    },
+    "billing": {
+      "description": "Cost management and billing services",
+      "services": ["costexplorer", "budgets", "cur"],
+      "subcategories": {
+        "cost-analysis": ["costexplorer"],
+        "cost-control": ["budgets"],
+        "reporting": ["cur"]
+      }
+    },
+    "hybrid": {
+      "description": "Hybrid cloud and edge computing services",
+      "services": ["outposts", "wavelength", "localzones"],
+      "subcategories": {
+        "on-premises": ["outposts"],
+        "edge": ["wavelength", "localzones"]
+      }
+    },
+    "ml": {
+      "description": "Machine learning and AI services",
+      "services": ["sagemaker"],
+      "subcategories": {
+        "ml-platform": ["sagemaker"]
+      }
+    },
+    "media": {
+      "description": "Media and streaming services",
+      "services": ["mediaservices"],
+      "subcategories": {
+        "streaming": ["mediaservices"]
+      }
+    }
+  }
+}

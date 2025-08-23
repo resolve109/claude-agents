@@ -1,0 +1,4 @@
+[2025-08-23T17:54:39-04:00] INIT_AGENT | Creating directories for: demo-agent
+[2025-08-23T17:54:39-04:00] SAVE_OUTPUT | Agent: demo-agent | File: cost-analysis.txt
+[2025-08-23T17:54:39-04:00] UPDATE_STATE | Agent: demo-agent
+[2025-08-23T17:54:40-04:00] INFO | Disk usage: 7%

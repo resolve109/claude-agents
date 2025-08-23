@@ -1,0 +1,72 @@
+{
+  "category": "networking",
+  "name": "Networking & Load Balancing",
+  "description": "AWS networking services for connectivity, load balancing, and content delivery",
+  "services": {
+    "vpc": {
+      "name": "Amazon VPC",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/vpc/latest/userguide/vpc-ug.pdf",
+      "description": "Virtual private cloud networking",
+      "key_topics": [
+        "Subnets and CIDR blocks",
+        "Route tables",
+        "Internet and NAT gateways",
+        "VPC peering",
+        "Transit Gateway",
+        "VPC endpoints"
+      ]
+    },
+    "elb": {
+      "name": "Elastic Load Balancing",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/elasticloadbalancing/latest/userguide/elb-ug.pdf",
+      "description": "Distribute traffic across targets",
+      "key_topics": [
+        "Application Load Balancer",
+        "Network Load Balancer",
+        "Gateway Load Balancer",
+        "Target groups",
+        "Health checks",
+        "SSL/TLS termination"
+      ]
+    },
+    "cloudfront": {
+      "name": "Amazon CloudFront",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonCloudFront/latest/DeveloperGuide/cloudfront-dg.pdf",
+      "description": "Content delivery network",
+      "key_topics": [
+        "Distributions",
+        "Origins and behaviors",
+        "Cache policies",
+        "Lambda@Edge",
+        "Security and access control",
+        "Real-time logs"
+      ]
+    },
+    "route53": {
+      "name": "Amazon Route 53",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/Route53/latest/DeveloperGuide/route53-dg.pdf",
+      "description": "DNS and domain registration",
+      "key_topics": [
+        "Hosted zones",
+        "Record types",
+        "Routing policies",
+        "Health checks",
+        "Traffic flow",
+        "Domain registration"
+      ]
+    },
+    "directconnect": {
+      "name": "AWS Direct Connect",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/directconnect/latest/UserGuide/dc-ug.pdf",
+      "description": "Dedicated network connection to AWS",
+      "key_topics": [
+        "Virtual interfaces",
+        "Link aggregation groups",
+        "Virtual LANs",
+        "BGP configuration",
+        "Direct Connect Gateway",
+        "Resiliency recommendations"
+      ]
+    }
+  }
+}

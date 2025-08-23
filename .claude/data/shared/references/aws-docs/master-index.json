@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated": "2024-08-23",
+    "total_services": 103,
+    "categories": 16,
+    "base_url_pattern": "https://docs.aws.amazon.com/pdfs/{service}/{version}/{guide}/{filename}.pdf"
+  },
+  "services": {
+    "ec2": {
+      "name": "Amazon EC2",
+      "category": "core-infrastructure",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AWSEC2/latest/UserGuide/ec2-ug.pdf",
+      "description": "Virtual servers in the cloud"
+    },
+    "ecs": {
+      "name": "Amazon ECS",
+      "category": "core-infrastructure",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonECS/latest/developerguide/ecs-dg.pdf",
+      "description": "Container orchestration service"
+    },
+    "eks": {
+      "name": "Amazon EKS",
+      "category": "core-infrastructure",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/eks/latest/userguide/eks-ug.pdf",
+      "description": "Managed Kubernetes service"
+    },
+    "lambda": {
+      "name": "AWS Lambda",
+      "category": "core-infrastructure",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/lambda/latest/dg/lambda-dg.pdf",
+      "description": "Serverless compute service"
+    },
+    "apigateway": {
+      "name": "Amazon API Gateway",
+      "category": "core-infrastructure",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/apigateway/latest/developerguide/apigateway-dg.pdf",
+      "description": "Build, deploy, and manage APIs"
+    },
+    "vpc": {
+      "name": "Amazon VPC",
+      "category": "networking",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/vpc/latest/userguide/vpc-ug.pdf",
+      "description": "Virtual private cloud networking"
+    },
+    "elb": {
+      "name": "Elastic Load Balancing",
+      "category": "networking",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/elasticloadbalancing/latest/userguide/elb-ug.pdf",
+      "description": "Distribute traffic across targets"
+    },
+    "cloudfront": {
+      "name": "Amazon CloudFront",
+      "category": "networking",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonCloudFront/latest/DeveloperGuide/cloudfront-dg.pdf",
+      "description": "Content delivery network"
+    },
+    "route53": {
+      "name": "Amazon Route 53",
+      "category": "networking",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/Route53/latest/DeveloperGuide/route53-dg.pdf",
+      "description": "DNS and domain registration"
+    },
+    "directconnect": {
+      "name": "AWS Direct Connect",
+      "category": "networking",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/directconnect/latest/UserGuide/dc-ug.pdf",
+      "description": "Dedicated network connection to AWS"
+    },
+    "s3": {
+      "name": "Amazon S3",
+      "category": "storage",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf",
+      "description": "Object storage service"
+    },
+    "efs": {
+      "name": "Amazon EFS",
+      "category": "storage",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/efs/latest/ug/efs-ug.pdf",
+      "description": "Elastic file system"
+    },
+    "fsx": {
+      "name": "Amazon FSx",
+      "category": "storage",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/fsx/latest/WindowsGuide/fsx-windows-ug.pdf",
+      "description": "Fully managed file storage"
+    },
+    "ebs": {
+      "name": "Amazon EBS",
+      "category": "storage",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AWSEC2/latest/UserGuide/ebs-ug.pdf",
+      "description": "Block storage for EC2"
+    },
+    "backup": {
+      "name": "AWS Backup",
+      "category": "storage",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/aws-backup/latest/devguide/backup-dg.pdf",
+      "description": "Centralized backup service"
+    },
+    "storagegateway": {
+      "name": "AWS Storage Gateway",
+      "category": "storage",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/storagegateway/latest/userguide/storagegateway-ug.pdf",
+      "description": "Hybrid cloud storage"
+    },
+    "rds": {
+      "name": "Amazon RDS",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/UserGuide/rds-ug.pdf",
+      "description": "Managed relational database"
+    },
+    "aurora": {
+      "name": "Amazon Aurora",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/AuroraUserGuide/aurora-ug.pdf",
+      "description": "MySQL and PostgreSQL-compatible database"
+    },
+    "dynamodb": {
+      "name": "Amazon DynamoDB",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/amazondynamodb/latest/developerguide/dynamodb-dg.pdf",
+      "description": "NoSQL database service"
+    },
+    "elasticache": {
+      "name": "Amazon ElastiCache",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonElastiCache/latest/red-ug/elasticache-ug.pdf",
+      "description": "In-memory caching service"
+    },
+    "documentdb": {
+      "name": "Amazon DocumentDB",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/documentdb/latest/developerguide/documentdb-dg.pdf",
+      "description": "MongoDB-compatible database"
+    },
+    "neptune": {
+      "name": "Amazon Neptune",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/neptune/latest/userguide/neptune-ug.pdf",
+      "description": "Graph database service"
+    },
+    "redshift": {
+      "name": "Amazon Redshift",
+      "category": "databases",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/redshift/latest/dg/redshift-dg.pdf",
+      "description": "Data warehouse service"
+    },
+    "iam": {
+      "name": "AWS IAM",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/IAM/latest/UserGuide/iam-ug.pdf",
+      "description": "Identity and access management"
+    },
+    "waf": {
+      "name": "AWS WAF",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/waf/latest/developerguide/waf-dg.pdf",
+      "description": "Web application firewall"
+    },
+    "kms": {
+      "name": "AWS KMS",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/kms/latest/developerguide/kms-dg.pdf",
+      "description": "Key management service"
+    },
+    "secretsmanager": {
+      "name": "AWS Secrets Manager",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/secretsmanager/latest/userguide/secretsmanager-ug.pdf",
+      "description": "Secrets management service"
+    },
+    "guardduty": {
+      "name": "Amazon GuardDuty",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/guardduty/latest/ug/guardduty-ug.pdf",
+      "description": "Threat detection service"
+    },
+    "acm": {
+      "name": "AWS Certificate Manager",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/acm/latest/userguide/acm-ug.pdf",
+      "description": "SSL/TLS certificate management"
+    },
+    "cognito": {
+      "name": "Amazon Cognito",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/cognito/latest/developerguide/cognito-dg.pdf",
+      "description": "User identity and authentication"
+    },
+    "inspector": {
+      "name": "Amazon Inspector",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/inspector/latest/userguide/inspector-ug.pdf",
+      "description": "Security assessment service"
+    },
+    "macie": {
+      "name": "Amazon Macie",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/macie/latest/user/macie-ug.pdf",
+      "description": "Data security and privacy service"
+    },
+    "securityhub": {
+      "name": "AWS Security Hub",
+      "category": "security",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/securityhub/latest/userguide/securityhub-ug.pdf",
+      "description": "Security posture management"
+    },
+    "cloudformation": {
+      "name": "AWS CloudFormation",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AWSCloudFormation/latest/UserGuide/cfn-ug.pdf",
+      "description": "Infrastructure as code"
+    },
+    "sam": {
+      "name": "AWS SAM",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/serverless-application-model/latest/developerguide/serverless-application-model-developerguide.pdf",
+      "description": "Serverless application model"
+    },
+    "cdk": {
+      "name": "AWS CDK",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/cdk/latest/guide/cdk-guide.pdf",
+      "description": "Cloud Development Kit"
+    },
+    "systems-manager": {
+      "name": "AWS Systems Manager",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/systems-manager/latest/userguide/systems-manager-ug.pdf",
+      "description": "Operations management"
+    },
+    "autoscaling": {
+      "name": "Amazon EC2 Auto Scaling",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/autoscaling/ec2/userguide/as-ug.pdf",
+      "description": "Automatic scaling"
+    },
+    "opsworks": {
+      "name": "AWS OpsWorks",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/opsworks/latest/userguide/opsworks-ug.pdf",
+      "description": "Configuration management"
+    },
+    "appconfig": {
+      "name": "AWS AppConfig",
+      "category": "iac-automation",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/appconfig/latest/userguide/appconfig-ug.pdf",
+      "description": "Application configuration"
+    },
+    "cloudwatch": {
+      "name": "Amazon CloudWatch",
+      "category": "monitoring",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonCloudWatch/latest/monitoring/acw-ug.pdf",
+      "description": "Monitoring and observability"
+    },
+    "xray": {
+      "name": "AWS X-Ray",
+      "category": "monitoring",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/xray/latest/devguide/xray-dg.pdf",
+      "description": "Application tracing"
+    },
+    "cloudtrail": {
+      "name": "AWS CloudTrail",
+      "category": "monitoring",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/awscloudtrail/latest/userguide/cloudtrail-ug.pdf",
+      "description": "API activity logging"
+    },
+    "codepipeline": {
+      "name": "AWS CodePipeline",
+      "category": "cicd",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/codepipeline/latest/userguide/codepipeline-ug.pdf",
+      "description": "Continuous delivery service"
+    },
+    "codebuild": {
+      "name": "AWS CodeBuild",
+      "category": "cicd",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/codebuild/latest/userguide/codebuild-ug.pdf",
+      "description": "Build service"
+    },
+    "codedeploy": {
+      "name": "AWS CodeDeploy",
+      "category": "cicd",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/codedeploy/latest/userguide/codedeploy-ug.pdf",
+      "description": "Deployment service"
+    },
+    "ecr": {
+      "name": "Amazon ECR",
+      "category": "cicd",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonECR/latest/userguide/ecr-ug.pdf",
+      "description": "Container registry"
+    },
+    "sqs": {
+      "name": "Amazon SQS",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dg.pdf",
+      "description": "Message queuing service"
+    },
+    "sns": {
+      "name": "Amazon SNS",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/sns/latest/dg/sns-dg.pdf",
+      "description": "Notification service"
+    },
+    "eventbridge": {
+      "name": "Amazon EventBridge",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/eventbridge/latest/userguide/eventbridge-ug.pdf",
+      "description": "Event bus service"
+    },
+    "stepfunctions": {
+      "name": "AWS Step Functions",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/step-functions/latest/dg/step-functions-dg.pdf",
+      "description": "Workflow orchestration"
+    },
+    "appmesh": {
+      "name": "AWS App Mesh",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/app-mesh/latest/userguide/appmesh-ug.pdf",
+      "description": "Service mesh"
+    },
+    "mq": {
+      "name": "Amazon MQ",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/amazon-mq/latest/developer-guide/amazon-mq-dg.pdf",
+      "description": "Message broker service"
+    },
+    "appflow": {
+      "name": "Amazon AppFlow",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/appflow/latest/userguide/appflow-ug.pdf",
+      "description": "SaaS integration service"
+    },
+    "apigatewayv2": {
+      "name": "Amazon API Gateway V2",
+      "category": "messaging",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/apigatewayv2/latest/api-reference/apigatewayv2-api.pdf",
+      "description": "WebSocket and HTTP APIs"
+    },
+    "fargate": {
+      "name": "AWS Fargate",
+      "category": "containers",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonECS/latest/userguide/fargate-ug.pdf",
+      "description": "Serverless compute for containers"
+    },
+    "batch": {
+      "name": "AWS Batch",
+      "category": "containers",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/batch/latest/userguide/batch-ug.pdf",
+      "description": "Batch computing"
+    },
+    "athena": {
+      "name": "Amazon Athena",
+      "category": "analytics",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/athena/latest/ug/athena-ug.pdf",
+      "description": "Interactive query service"
+    },
+    "emr": {
+      "name": "Amazon EMR",
+      "category": "analytics",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/emr/latest/ManagementGuide/emr-mg.pdf",
+      "description": "Big data processing"
+    },
+    "kinesis": {
+      "name": "Amazon Kinesis",
+      "category": "analytics",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/kinesis/latest/dev/kinesis-dg.pdf",
+      "description": "Real-time data streaming"
+    },
+    "glue": {
+      "name": "AWS Glue",
+      "category": "analytics",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/glue/latest/dg/glue-dg.pdf",
+      "description": "ETL service"
+    },
+    "msk": {
+      "name": "Amazon MSK",
+      "category": "analytics",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/msk/latest/developerguide/msk-dg.pdf",
+      "description": "Managed Kafka service"
+    },
+    "organizations": {
+      "name": "AWS Organizations",
+      "category": "management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/organizations/latest/userguide/organizations-ug.pdf",
+      "description": "Account management"
+    },
+    "config": {
+      "name": "AWS Config",
+      "category": "management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/config/latest/developerguide/config-dg.pdf",
+      "description": "Resource configuration tracking"
+    },
+    "servicecatalog": {
+      "name": "AWS Service Catalog",
+      "category": "management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/servicecatalog/latest/adminguide/servicecatalog-ag.pdf",
+      "description": "IT service management"
+    },
+    "controltower": {
+      "name": "AWS Control Tower",
+      "category": "management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/controltower/latest/userguide/controltower-ug.pdf",
+      "description": "Multi-account governance"
+    },
+    "ram": {
+      "name": "AWS RAM",
+      "category": "management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/ram/latest/userguide/ram-ug.pdf",
+      "description": "Resource Access Manager"
+    },
+    "dms": {
+      "name": "AWS DMS",
+      "category": "migration",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/dms/latest/userguide/dms-ug.pdf",
+      "description": "Database migration service"
+    },
+    "datasync": {
+      "name": "AWS DataSync",
+      "category": "migration",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/datasync/latest/userguide/datasync-ug.pdf",
+      "description": "Data transfer service"
+    },
+    "transfer": {
+      "name": "AWS Transfer Family",
+      "category": "migration",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/transfer/latest/userguide/transfer-ug.pdf",
+      "description": "File transfer service"
+    },
+    "migrationhub": {
+      "name": "AWS Migration Hub",
+      "category": "migration",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/migrationhub/latest/ug/migrationhub-ug.pdf",
+      "description": "Migration tracking"
+    },
+    "costexplorer": {
+      "name": "AWS Cost Explorer",
+      "category": "cost-management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/cost-management/latest/userguide/cost-management-ug.pdf",
+      "description": "Cost analysis and visualization"
+    },
+    "budgets": {
+      "name": "AWS Budgets",
+      "category": "cost-management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/cost-management/latest/userguide/budgets-ug.pdf",
+      "description": "Budget management"
+    },
+    "cur": {
+      "name": "AWS Cost and Usage Report",
+      "category": "cost-management",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/cur/latest/userguide/cur-ug.pdf",
+      "description": "Detailed billing reports"
+    },
+    "outposts": {
+      "name": "AWS Outposts",
+      "category": "hybrid-edge",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/outposts/latest/userguide/outposts-ug.pdf",
+      "description": "On-premises AWS infrastructure"
+    },
+    "wavelength": {
+      "name": "AWS Wavelength",
+      "category": "hybrid-edge",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/wavelength/latest/developerguide/wavelength-dg.pdf",
+      "description": "5G edge computing"
+    },
+    "localzones": {
+      "name": "AWS Local Zones",
+      "category": "hybrid-edge",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/local-zones/latest/ug/local-zones-ug.pdf",
+      "description": "Low-latency compute zones"
+    },
+    "lightsail": {
+      "name": "Amazon Lightsail",
+      "category": "additional-compute",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/lightsail/latest/userguide/lightsail-ug.pdf",
+      "description": "Simple virtual private servers"
+    },
+    "elasticbeanstalk": {
+      "name": "AWS Elastic Beanstalk",
+      "category": "additional-compute",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/elasticbeanstalk/latest/dg/elasticbeanstalk-dg.pdf",
+      "description": "Platform as a service"
+    },
+    "sagemaker": {
+      "name": "Amazon SageMaker",
+      "category": "machine-learning",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/sagemaker/latest/dg/sagemaker-dg.pdf",
+      "description": "Machine learning platform"
+    },
+    "mediaservices": {
+      "name": "AWS Media Services",
+      "category": "media",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/mediaservices/latest/userguide/mediaservices-ug.pdf",
+      "description": "Media processing and delivery"
+    }
+  },
+  "categories": {
+    "core-infrastructure": {
+      "name": "Core Infrastructure Services",
+      "services": ["ec2", "ecs", "eks", "lambda", "apigateway"]
+    },
+    "networking": {
+      "name": "Networking & Load Balancing",
+      "services": ["vpc", "elb", "cloudfront", "route53", "directconnect"]
+    },
+    "storage": {
+      "name": "Storage Services",
+      "services": ["s3", "efs", "fsx", "ebs", "backup", "storagegateway"]
+    },
+    "databases": {
+      "name": "Database Services",
+      "services": ["rds", "aurora", "dynamodb", "elasticache", "documentdb", "neptune", "redshift"]
+    },
+    "security": {
+      "name": "Security & Identity",
+      "services": ["iam", "waf", "kms", "secretsmanager", "guardduty", "acm", "cognito", "inspector", "macie", "securityhub"]
+    },
+    "iac-automation": {
+      "name": "Infrastructure as Code & Automation",
+      "services": ["cloudformation", "sam", "cdk", "systems-manager", "autoscaling", "opsworks", "appconfig"]
+    },
+    "monitoring": {
+      "name": "Monitoring & Observability",
+      "services": ["cloudwatch", "xray", "cloudtrail"]
+    },
+    "cicd": {
+      "name": "CI/CD & Developer Tools",
+      "services": ["codepipeline", "codebuild", "codedeploy", "ecr"]
+    },
+    "messaging": {
+      "name": "Messaging & Integration",
+      "services": ["sqs", "sns", "eventbridge", "stepfunctions", "appmesh", "mq", "appflow", "apigatewayv2"]
+    },
+    "containers": {
+      "name": "Container Services",
+      "services": ["fargate", "batch"]
+    },
+    "analytics": {
+      "name": "Analytics & Big Data",
+      "services": ["athena", "emr", "kinesis", "glue", "msk"]
+    },
+    "management": {
+      "name": "Management & Governance",
+      "services": ["organizations", "config", "servicecatalog", "controltower", "ram"]
+    },
+    "migration": {
+      "name": "Migration & Transfer",
+      "services": ["dms", "datasync", "transfer", "migrationhub"]
+    },
+    "cost-management": {
+      "name": "Cost Management",
+      "services": ["costexplorer", "budgets", "cur"]
+    },
+    "hybrid-edge": {
+      "name": "Hybrid & Edge",
+      "services": ["outposts", "wavelength", "localzones"]
+    },
+    "additional-compute": {
+      "name": "Additional Compute Services",
+      "services": ["lightsail", "elasticbeanstalk"]
+    },
+    "machine-learning": {
+      "name": "Machine Learning Infrastructure",
+      "services": ["sagemaker"]
+    },
+    "media": {
+      "name": "Media Services",
+      "services": ["mediaservices"]
+    }
+  }
+}

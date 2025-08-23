@@ -1,0 +1,72 @@
+{
+  "category": "core-infrastructure",
+  "name": "Core Infrastructure Services",
+  "description": "Essential AWS compute and API services for building cloud applications",
+  "services": {
+    "ec2": {
+      "name": "Amazon EC2",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AWSEC2/latest/UserGuide/ec2-ug.pdf",
+      "description": "Virtual servers in the cloud",
+      "key_topics": [
+        "Instance types and families",
+        "Security groups and NACLs",
+        "AMI management",
+        "Auto Scaling",
+        "Spot instances",
+        "Placement groups"
+      ]
+    },
+    "ecs": {
+      "name": "Amazon ECS",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonECS/latest/developerguide/ecs-dg.pdf",
+      "description": "Container orchestration service",
+      "key_topics": [
+        "Task definitions",
+        "Services and deployments",
+        "Cluster management",
+        "Container networking",
+        "Service discovery",
+        "ECS Anywhere"
+      ]
+    },
+    "eks": {
+      "name": "Amazon EKS",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/eks/latest/userguide/eks-ug.pdf",
+      "description": "Managed Kubernetes service",
+      "key_topics": [
+        "Cluster creation and management",
+        "Node groups",
+        "RBAC configuration",
+        "Add-ons management",
+        "Fargate integration",
+        "EKS Anywhere"
+      ]
+    },
+    "lambda": {
+      "name": "AWS Lambda",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/lambda/latest/dg/lambda-dg.pdf",
+      "description": "Serverless compute service",
+      "key_topics": [
+        "Function configuration",
+        "Runtime environments",
+        "Event sources",
+        "Layers and extensions",
+        "Container images",
+        "Performance optimization"
+      ]
+    },
+    "apigateway": {
+      "name": "Amazon API Gateway",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/apigateway/latest/developerguide/apigateway-dg.pdf",
+      "description": "Build, deploy, and manage APIs",
+      "key_topics": [
+        "REST APIs",
+        "WebSocket APIs",
+        "API keys and usage plans",
+        "Request/response transformations",
+        "Authorization and authentication",
+        "Custom domain names"
+      ]
+    }
+  }
+}

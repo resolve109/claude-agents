@@ -1,0 +1,60 @@
+# Infrastructure Requirements for Production Environment
+# Generated: 2025-01-23
+# Agent: Terra (Terraform Infrastructure)
+
+## Cloud Provider Requirements
+- Provider: AWS
+- Region: us-east-1
+- Availability Zones: 3 (us-east-1a, us-east-1b, us-east-1c)
+
+## Network Architecture
+- VPC CIDR: 10.0.0.0/16
+- Public Subnets: 3 (10.0.1.0/24, 10.0.2.0/24, 10.0.3.0/24)
+- Private Subnets: 3 (10.0.101.0/24, 10.0.102.0/24, 10.0.103.0/24)
+- NAT Gateways: 3 (one per AZ for HA)
+- Internet Gateway: 1
+
+## Compute Resources
+- EKS Cluster: 1
+  - Version: 1.28
+  - Node Groups: 2
+    - General Purpose: t3.large (min: 3, max: 10)
+    - Compute Optimized: c5.xlarge (min: 2, max: 5)
+
+## Storage Requirements
+- RDS PostgreSQL: 1
+  - Instance Class: db.t3.medium
+  - Storage: 100GB (gp3)
+  - Multi-AZ: Yes
+  - Backup Retention: 7 days
+
+- S3 Buckets: 3
+  - Application Data: versioning enabled
+  - Logs: lifecycle policy (90 days)
+  - Backups: cross-region replication
+
+## Security Requirements
+- WAF: Enabled on ALB
+- Security Groups: Principle of least privilege
+- NACLs: Default with custom rules for database tier
+- KMS: Customer-managed keys for encryption
+- Secrets Manager: For database credentials
+
+## Monitoring and Logging
+- CloudWatch: All services
+- CloudTrail: Enabled for audit
+- VPC Flow Logs: Enabled
+- AWS Config: Compliance monitoring
+
+## Cost Optimization
+- Auto-scaling: Enabled for all services
+- Spot Instances: 30% of compute capacity
+- Reserved Instances: Database and NAT Gateways
+- Budget Alert: $5000/month
+
+## Tags
+Environment: Production
+Project: CloudAgents
+Owner: DevOps Team
+CostCenter: Engineering
+ManagedBy: Terraform

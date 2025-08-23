@@ -1,0 +1,8 @@
+Analysis Complete
+=================
+Total Monthly Cost: $3,456.78
+Potential Savings: $892.34
+Recommendations:
+- Righti-size EC2 instances
+- Enable S3 lifecycle policies
+- Use Reserved Instances for databases

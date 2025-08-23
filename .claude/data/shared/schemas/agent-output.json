@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent Output Schema",
+  "description": "Standard schema for agent output files",
+  "type": "object",
+  "required": ["metadata", "status", "data"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["agent", "timestamp", "version"],
+      "properties": {
+        "agent": {
+          "type": "string",
+          "description": "Name of the agent that produced this output"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of when output was generated"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version of the output format"
+        },
+        "request_id": {
+          "type": "string",
+          "description": "Optional unique identifier for tracking requests"
+        },
+        "environment": {
+          "type": "string",
+          "enum": ["dev", "staging", "prod"],
+          "description": "Target environment"
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": ["success", "warning", "error", "partial"],
+          "description": "Overall status of the operation"
+        },
+        "message": {
+          "type": "string",
+          "description": "Human-readable status message"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Additional status details or warnings"
+        }
+      }
+    },
+    "data": {
+      "type": "object",
+      "description": "The actual output data (structure varies by agent)"
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "duration_seconds": {
+          "type": "number",
+          "description": "Time taken to generate output"
+        },
+        "items_processed": {
+          "type": "integer",
+          "description": "Number of items processed"
+        },
+        "cost_estimate": {
+          "type": "number",
+          "description": "Estimated cost in USD"
+        }
+      }
+    },
+    "next_steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["agent", "action"],
+        "properties": {
+          "agent": {
+            "type": "string",
+            "description": "Next agent in the workflow"
+          },
+          "action": {
+            "type": "string",
+            "description": "Action for the next agent to take"
+          },
+          "input_file": {
+            "type": "string",
+            "description": "Path to input file for next agent"
+          }
+        }
+      }
+    }
+  }
+}

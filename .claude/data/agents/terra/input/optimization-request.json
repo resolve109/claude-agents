@@ -1,0 +1,10 @@
+{
+  "source_agent": "demo-agent",
+  "target_agent": "terra",
+  "timestamp": "2025-08-23T17:54:39-04:00",
+  "data": {
+    "action": "implement_cost_optimizations",
+    "targets": ["ec2", "s3", "rds"],
+    "expected_savings": 892.34
+  }
+}

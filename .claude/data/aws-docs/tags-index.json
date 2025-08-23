@@ -1,0 +1,78 @@
+{
+  "tags": {
+    "serverless": [
+      "lambda", "dynamodb", "apigateway", "sam", "fargate", "eventbridge",
+      "stepfunctions", "athena", "glue", "apigatewayv2"
+    ],
+    "containers": [
+      "ecs", "eks", "ecr", "fargate", "batch", "appmesh"
+    ],
+    "iac": [
+      "cloudformation", "sam", "cdk", "terraform"
+    ],
+    "cicd": [
+      "codepipeline", "codebuild", "codedeploy"
+    ],
+    "security": [
+      "iam", "waf", "kms", "secretsmanager", "guardduty", "acm",
+      "cognito", "inspector", "macie", "securityhub", "vpc"
+    ],
+    "compliance": [
+      "cloudtrail", "config", "guardduty", "inspector", "macie",
+      "securityhub", "backup", "kms"
+    ],
+    "monitoring": [
+      "cloudwatch", "xray", "cloudtrail", "guardduty", "appmesh"
+    ],
+    "database": [
+      "rds", "dynamodb", "elasticache", "aurora", "documentdb",
+      "neptune", "redshift"
+    ],
+    "storage": [
+      "s3", "efs", "fsx", "ebs", "backup", "storagegateway"
+    ],
+    "networking": [
+      "vpc", "elb", "cloudfront", "route53", "directconnect",
+      "apigateway", "appmesh"
+    ],
+    "hybrid": [
+      "directconnect", "storagegateway", "outposts", "wavelength",
+      "localzones", "dms", "datasync"
+    ],
+    "big-data": [
+      "emr", "kinesis", "glue", "athena", "redshift", "msk"
+    ],
+    "messaging": [
+      "sqs", "sns", "eventbridge", "mq", "kinesis", "msk"
+    ],
+    "ml": [
+      "sagemaker"
+    ],
+    "compute": [
+      "ec2", "lambda", "ecs", "eks", "fargate", "batch",
+      "lightsail", "elasticbeanstalk"
+    ],
+    "automation": [
+      "cloudformation", "systems-manager", "codepipeline",
+      "stepfunctions", "eventbridge", "lambda"
+    ],
+    "cost-optimization": [
+      "costexplorer", "budgets", "cur", "autoscaling",
+      "lambda", "fargate", "spot"
+    ],
+    "high-availability": [
+      "elb", "autoscaling", "route53", "rds", "aurora",
+      "cloudfront", "s3"
+    ],
+    "disaster-recovery": [
+      "backup", "s3", "rds", "aurora", "dms", "route53"
+    ],
+    "api": [
+      "apigateway", "apigatewayv2", "appmesh", "lambda"
+    ],
+    "governance": [
+      "organizations", "controltower", "servicecatalog",
+      "config", "cloudtrail", "ram"
+    ]
+  }
+}

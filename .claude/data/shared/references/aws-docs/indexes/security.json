@@ -1,0 +1,137 @@
+{
+  "category": "security",
+  "name": "Security & Identity Services",
+  "description": "AWS security, identity, compliance, and data protection services",
+  "services": {
+    "iam": {
+      "name": "AWS IAM",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/IAM/latest/UserGuide/iam-ug.pdf",
+      "description": "Identity and access management",
+      "key_topics": [
+        "Users, groups, and roles",
+        "Policies and permissions",
+        "MFA configuration",
+        "Access keys and credentials",
+        "Cross-account access",
+        "Service control policies"
+      ]
+    },
+    "waf": {
+      "name": "AWS WAF",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/waf/latest/developerguide/waf-dg.pdf",
+      "description": "Web application firewall",
+      "key_topics": [
+        "Web ACLs",
+        "Rules and rule groups",
+        "Rate-based rules",
+        "Managed rule groups",
+        "Logging and monitoring",
+        "Bot control"
+      ]
+    },
+    "kms": {
+      "name": "AWS KMS",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/kms/latest/developerguide/kms-dg.pdf",
+      "description": "Key management service",
+      "key_topics": [
+        "Customer master keys (CMKs)",
+        "Key policies",
+        "Envelope encryption",
+        "Key rotation",
+        "Multi-region keys",
+        "Custom key stores"
+      ]
+    },
+    "secretsmanager": {
+      "name": "AWS Secrets Manager",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/secretsmanager/latest/userguide/secretsmanager-ug.pdf",
+      "description": "Secrets management service",
+      "key_topics": [
+        "Secret creation and storage",
+        "Automatic rotation",
+        "Version management",
+        "Cross-region replication",
+        "Database credentials",
+        "API key management"
+      ]
+    },
+    "guardduty": {
+      "name": "Amazon GuardDuty",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/guardduty/latest/ug/guardduty-ug.pdf",
+      "description": "Threat detection service",
+      "key_topics": [
+        "Threat intelligence",
+        "Finding types",
+        "Suppression rules",
+        "Trusted IP lists",
+        "S3 protection",
+        "EKS protection"
+      ]
+    },
+    "acm": {
+      "name": "AWS Certificate Manager",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/acm/latest/userguide/acm-ug.pdf",
+      "description": "SSL/TLS certificate management",
+      "key_topics": [
+        "Certificate provisioning",
+        "Domain validation",
+        "Certificate renewal",
+        "Private certificates",
+        "Certificate export",
+        "CloudFront integration"
+      ]
+    },
+    "cognito": {
+      "name": "Amazon Cognito",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/cognito/latest/developerguide/cognito-dg.pdf",
+      "description": "User identity and authentication",
+      "key_topics": [
+        "User pools",
+        "Identity pools",
+        "MFA and security",
+        "Social identity providers",
+        "SAML integration",
+        "Lambda triggers"
+      ]
+    },
+    "inspector": {
+      "name": "Amazon Inspector",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/inspector/latest/userguide/inspector-ug.pdf",
+      "description": "Security assessment service",
+      "key_topics": [
+        "Assessment templates",
+        "Rules packages",
+        "Finding types",
+        "Network assessments",
+        "Container scanning",
+        "Lambda scanning"
+      ]
+    },
+    "macie": {
+      "name": "Amazon Macie",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/macie/latest/user/macie-ug.pdf",
+      "description": "Data security and privacy service",
+      "key_topics": [
+        "S3 bucket inventory",
+        "Sensitive data discovery",
+        "Custom data identifiers",
+        "Finding types",
+        "Job scheduling",
+        "Allow lists"
+      ]
+    },
+    "securityhub": {
+      "name": "AWS Security Hub",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/securityhub/latest/userguide/securityhub-ug.pdf",
+      "description": "Security posture management",
+      "key_topics": [
+        "Security standards",
+        "Compliance scores",
+        "Finding aggregation",
+        "Insights",
+        "Custom actions",
+        "Integration with services"
+      ]
+    }
+  }
+}

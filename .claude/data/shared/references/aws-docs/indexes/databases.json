@@ -1,0 +1,98 @@
+{
+  "category": "databases",
+  "name": "Database Services",
+  "description": "AWS managed database services for relational, NoSQL, and specialized data storage",
+  "services": {
+    "rds": {
+      "name": "Amazon RDS",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/UserGuide/rds-ug.pdf",
+      "description": "Managed relational database",
+      "key_topics": [
+        "DB instances and engines",
+        "Multi-AZ deployments",
+        "Read replicas",
+        "Backup and restore",
+        "Performance Insights",
+        "Proxy connections"
+      ]
+    },
+    "aurora": {
+      "name": "Amazon Aurora",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/AuroraUserGuide/aurora-ug.pdf",
+      "description": "MySQL and PostgreSQL-compatible database",
+      "key_topics": [
+        "Aurora Serverless",
+        "Global databases",
+        "Parallel query",
+        "Backtrack",
+        "Aurora cloning",
+        "Aurora Machine Learning"
+      ]
+    },
+    "dynamodb": {
+      "name": "Amazon DynamoDB",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/amazondynamodb/latest/developerguide/dynamodb-dg.pdf",
+      "description": "NoSQL database service",
+      "key_topics": [
+        "Tables and items",
+        "Partition keys and sort keys",
+        "Global and local secondary indexes",
+        "DynamoDB Streams",
+        "Global tables",
+        "PartiQL queries"
+      ]
+    },
+    "elasticache": {
+      "name": "Amazon ElastiCache",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/AmazonElastiCache/latest/red-ug/elasticache-ug.pdf",
+      "description": "In-memory caching service",
+      "key_topics": [
+        "Redis vs Memcached",
+        "Cluster mode",
+        "Replication groups",
+        "Automatic failover",
+        "Backup and restore",
+        "Security groups"
+      ]
+    },
+    "documentdb": {
+      "name": "Amazon DocumentDB",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/documentdb/latest/developerguide/documentdb-dg.pdf",
+      "description": "MongoDB-compatible database",
+      "key_topics": [
+        "Clusters and instances",
+        "MongoDB compatibility",
+        "Backup and restore",
+        "Performance tuning",
+        "Change streams",
+        "TLS/SSL connections"
+      ]
+    },
+    "neptune": {
+      "name": "Amazon Neptune",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/neptune/latest/userguide/neptune-ug.pdf",
+      "description": "Graph database service",
+      "key_topics": [
+        "Graph models (Property Graph and RDF)",
+        "Gremlin queries",
+        "SPARQL queries",
+        "Bulk loading",
+        "Neptune ML",
+        "Global databases"
+      ]
+    },
+    "redshift": {
+      "name": "Amazon Redshift",
+      "pdf_url": "https://docs.aws.amazon.com/pdfs/redshift/latest/dg/redshift-dg.pdf",
+      "description": "Data warehouse service",
+      "key_topics": [
+        "Cluster management",
+        "Table design",
+        "Distribution styles",
+        "Sort keys",
+        "Redshift Spectrum",
+        "Concurrency scaling"
+      ]
+    }
+  }
+}
