@@ -101,6 +101,21 @@
       "command": "npx",
       "args": ["-y", "@makowski/mcp-server-aws-kb"],
       "env": {}
+    },
+    "hacker-news": {
+      "command": "npx",
+      "args": ["-y", "github:pskill9/hn-server"],
+      "env": {}
+    },
+    "calculator": {
+      "command": "npx",
+      "args": ["-y", "github:pwh-pwh/cal-mcp"],
+      "env": {}
+    },
+    "wikipedia": {
+      "command": "npx",
+      "args": ["-y", "github:future-audiences/wikimedia-enterprise-model-context-protocol"],
+      "env": {}
     }
   }
 }
