@@ -4,3 +4,17 @@ tmp/
 npm-debug.log*
 .DS_Store
 
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# AWS Documentation PDFs (too large for GitHub)
+.claude/data/shared/references/aws-docs/pdfs/
+*.pdf
+
+# Logs
+*.log
+.claude/data/shared/references/aws-docs/*.log
+
