@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-24T12:13:30.311366",
+  "system_info": {
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python_version": "3.12.3",
+    "working_directory": "/mnt/e/github/agents/claude-agents/.claude",
+    "user": "sidpa",
+    "timestamp": "2025-08-24T12:13:30.313576"
+  },
+  "checks": {
+    "structure": {
+      "status": "critical",
+      "issues": [
+        "Missing folder: data/backups"
+      ]
+    },
+    "agents": {
+      "status": "warning",
+      "issues": [
+        "Invalid configuration: CLAUDE.md"
+      ]
+    },
+    "configuration": {
+      "status": "healthy",
+      "issues": []
+    },
+    "dependencies": {
+      "status": "healthy",
+      "issues": []
+    },
+    "permissions": {
+      "status": "healthy",
+      "issues": []
+    },
+    "performance": {
+      "status": "healthy",
+      "issues": []
+    },
+    "security": {
+      "status": "healthy",
+      "issues": []
+    },
+    "integrity": {
+      "status": "healthy",
+      "issues": []
+    }
+  },
+  "issues": [
+    {
+      "category": "structure",
+      "issue": "Missing folder: data/backups",
+      "severity": "critical"
+    },
+    {
+      "category": "agents",
+      "issue": "Invalid configuration: CLAUDE.md",
+      "severity": "warning"
+    }
+  ],
+  "fixes_applied": [
+    "Created missing folder: data/backups",
+    "Fixed configuration for CLAUDE.md"
+  ],
+  "overall_health": "critical"
+}

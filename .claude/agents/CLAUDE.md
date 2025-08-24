@@ -1,3 +1,10 @@
+---
+name: CLAUDE
+description: Agent for CLAUDE operations
+model: inherit
+color: blue
+---
+
 # Claude Code Agents for DevOps & Infrastructure Teams
 
 ## Overview
