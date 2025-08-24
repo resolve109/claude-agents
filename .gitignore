@@ -9,12 +9,67 @@ venv/
 .venv/
 env/
 ENV/
+*.pyc
+__pycache__/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
 
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+*.secret
+*.key
+*.pem
+*.p12
+credentials.json
+secrets.yaml
+secrets.yml
 # AWS Documentation PDFs (too large for GitHub)
 .claude/data/shared/references/aws-docs/pdfs/
 *.pdf
 
-# Logs
+# Logs and temporary files
 *.log
 .claude/data/shared/references/aws-docs/*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.cache/
+.temp/
+
+# Claude-specific ignores
+.claude/.env
+.claude/.env.*
+!.claude/.env.example
+!.claude/.env.template
+.claude/venv/
+.claude/node_modules/
+.claude/data/*/state/*.json
+.claude/data/*/cache/
+.claude/data/*/temp/
+.claude/backups/
+.claude-backup-*/
+
+# MCP server credentials
+.claude/mcp/credentials/
+.claude/mcp/*.key
+.claude/mcp/*.pem
+.claude/mcp/secrets.json
+
+# Agent-specific runtime data
+.claude/agents/*.tmp
+.claude/agents/*.cache
+.claude/agents/*.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+.project
+.classpath
 

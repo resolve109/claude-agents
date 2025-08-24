@@ -1,0 +1,10 @@
+{
+  "infrastructure": {
+    "vpc_id": "vpc-123",
+    "subnets": [
+      "subnet-1",
+      "subnet-2"
+    ]
+  },
+  "status": "deployed"
+}

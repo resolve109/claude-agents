@@ -1,0 +1,13 @@
+{
+  "workflow_id": "infrastructure-deployment-20250824-113749",
+  "started_at": "2025-08-24T11:37:49.865082",
+  "steps": [
+    {
+      "from": "terra",
+      "to": "k8s",
+      "file": "/mnt/e/github/agents/claude-agents/.claude/data/agents/k8s/input/handoff-terra-to-k8s-20250824-113749.json",
+      "timestamp": "2025-08-24T11:37:49.889915"
+    }
+  ],
+  "updated_at": "2025-08-24T11:37:49.890018"
+}

@@ -1,0 +1,43 @@
+# Claude Folder Specific Ignores
+# This provides an additional layer of protection for sensitive files
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Python virtual environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Sensitive files
+*.key
+*.pem
+*.secret
+credentials.json
+secrets.*
+
+# Runtime and state files
+data/*/state/*.json
+data/*/cache/
+data/*/temp/
+*.tmp
+*.cache
+*.lock
+
+# Backup files
+backups/
+*.bak
+*~
+
+# IDE files
+.vscode/
+.idea/
