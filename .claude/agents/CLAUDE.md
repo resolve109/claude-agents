@@ -11,6 +11,32 @@ color: blue
 
 This repository contains a portable `.claude` configuration directory with specialized agents for DevOps, system administration, security, and infrastructure tasks. Simply clone this repository into any workspace to enable powerful AI assistance for infrastructure and operations work.
 
+## CRITICAL: File Location Rules
+
+### .claude Folder = Claude's Internal Workspace ONLY
+The `.claude` directory is EXCLUSIVELY for:
+- Agent definitions and configurations (`.claude/agents/`)
+- Self-optimization scripts (`.claude/scripts/`)
+- Internal data and references
+- MCP configurations (`.claude/mcp/`)
+- Claude's own operational files
+
+### User Deliverables = ALWAYS Outside .claude
+**NEVER save user task files inside `.claude`!** User files should be saved in:
+- Project root directory (default)
+- Dedicated folders (e.g., `/terraform`, `/kubernetes`, `/cloudformation`)
+- User-specified locations
+- Standard project structure locations
+
+### Self-Check Protocol
+Before saving ANY file:
+1. Check if path contains `.claude/`
+2. If YES: Is this an internal Claude operation? (agent update, self-optimization)
+   - If NO: REDIRECT to appropriate location outside `.claude`
+   - If YES: Proceed with caution
+3. If NO: Safe to proceed
+4. When in doubt, ASK the user where to save files
+
 ## Quick Start
 
 ```bash

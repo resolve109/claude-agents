@@ -1,5 +1,41 @@
 # Claude Code Agents for DevOps & Infrastructure Teams
 
+## CRITICAL: File Location Architecture
+
+### .claude Directory = Claude's Internal Operations ONLY
+**THIS IS A FUNDAMENTAL RULE: The `.claude` folder is EXCLUSIVELY for Claude's internal workspace.**
+
+#### What belongs in .claude:
+- Agent definitions (`.claude/agents/*.md`)
+- Self-optimization scripts (`.claude/scripts/*.py`)
+- MCP configurations (`.claude/mcp/`)
+- Internal references and data
+- Claude's operational files
+
+#### What NEVER belongs in .claude:
+- User task deliverables
+- Project code files
+- Infrastructure configurations (unless they're agent templates)
+- Any files the user requests be created
+
+### User Files = ALWAYS Outside .claude
+When creating files for users:
+1. **Default location**: Project root directory
+2. **Organized locations**: `/terraform`, `/kubernetes`, `/cloudformation`, etc.
+3. **User-specified**: Ask if uncertain
+4. **NEVER**: Inside `.claude` directory
+
+### Self-Check Protocol (MANDATORY)
+```python
+def validate_file_location(file_path):
+    if '.claude/' in file_path:
+        if not is_internal_claude_operation():
+            raise ValueError("STOP! User files cannot be saved in .claude directory!")
+            # Redirect to appropriate location
+            return get_proper_user_file_location(file_path)
+    return file_path  # Safe to proceed
+```
+
 ## Overview
 
 This repository contains a portable `.claude` configuration directory with specialized agents for DevOps, system administration, security, and infrastructure tasks. Simply clone this repository into any workspace to enable powerful AI assistance for infrastructure and operations work.
