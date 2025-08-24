@@ -36,6 +36,31 @@ def validate_file_location(file_path):
     return file_path  # Safe to proceed
 ```
 
+## Token Optimization Guidelines
+
+### CRITICAL: Reduce Token Usage (Target: <30% of limit)
+
+#### Agent Definition Best Practices
+- **Max 200 lines per agent** (reduced from 500+)
+- **Use shorthand notation**: `→` instead of verbose descriptions
+- **Remove examples from descriptions** - keep in separate docs
+- **Compress YAML/JSON** to single-line where possible
+- **Use abbreviations**: K8s, TF, IaC, CICD, etc.
+
+#### Smart Data Access Patterns
+- **Summary-first approach**: Read metadata before full content
+- **Hash-based lookups**: Use MASTER_INDEX.json for quick references
+- **Chunked reading**: Only load relevant sections
+- **Cache frequently used data**: Store in compressed format
+- **Lazy loading**: Don't preload entire files
+
+#### Response Efficiency
+- **Progressive disclosure**: L1→L2→L3 detail levels
+- **Code-first responses**: Show solutions, explain only if asked
+- **Reference patterns**: Point to docs instead of repeating
+- **Batch operations**: Combine related tool calls
+- **Smart defaults**: Assume common configurations
+
 ## Overview
 
 This repository contains a portable `.claude` configuration directory with specialized agents for DevOps, system administration, security, and infrastructure tasks. Simply clone this repository into any workspace to enable powerful AI assistance for infrastructure and operations work.
